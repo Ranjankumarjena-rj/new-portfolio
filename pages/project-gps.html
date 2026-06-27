@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPS Tracking Platform — Ranjan Kumar Jena</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">RKJ<span class="accent">.</span></a>
+      <nav>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a href="mailto:ranjankumarjena.rjs@gmail.com" class="btn-nav">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- DETAIL HERO -->
+  <section class="detail-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="detail-back">← Back to Projects</a>
+      <div class="project-status" style="margin-bottom:.75rem;">
+        <span class="dot green"></span>
+        <span style="font-family:var(--font-mono);font-size:.68rem;color:var(--green);letter-spacing:.06em;">Production · Internal Platform</span>
+      </div>
+      <h1>Real-Time Field-Force GPS Tracking Platform</h1>
+      <div class="detail-meta">
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Client</span>
+          <span class="detail-meta-value">Samal Motors Pvt. Ltd.</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Role</span>
+          <span class="detail-meta-value">Cloud Support Engineer</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Duration</span>
+          <span class="detail-meta-value">Apr 2025 – Present</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Uptime SLA</span>
+          <span class="detail-meta-value">99.95%</span>
+        </div>
+      </div>
+      <div class="detail-hero-tags">
+        <span>EKS</span><span>Kinesis</span><span>API Gateway</span>
+        <span>NLB</span><span>ElastiCache</span><span>Lambda</span>
+        <span>Terraform</span><span>Helm</span><span>GitHub Actions</span>
+        <span>SonarQube</span><span>ELK Stack</span><span>Secrets Manager</span>
+        <span>Node.js</span><span>PostgreSQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="detail-body">
+    <div class="container">
+      <main class="detail-main">
+
+        <!-- OVERVIEW -->
+        <div class="detail-section">
+          <h2>Project Overview</h2>
+          <p>
+            Architecture, deployment, and operational maintenance of a high-availability,
+            low-latency field-force tracking and route optimization platform. The system processes
+            continuous real-time GPS telemetry data from thousands of on-field sales executives
+            and distribution vehicles simultaneously. Engineered for sub-second data ingestion
+            latency, a 99.95% uptime SLA, and strong security controls over sensitive personnel
+            geolocation data across a hybrid AWS cloud infrastructure.
+          </p>
+        </div>
+
+        <!-- METRICS -->
+        <div class="detail-section">
+          <h2>Key Metrics</h2>
+          <div class="metrics-row">
+            <div class="metric-box">
+              <span class="metric-val">99.95%</span>
+              <span class="metric-lbl">Uptime SLA</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">&lt;1s</span>
+              <span class="metric-lbl">Ingestion Latency</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">↓80%</span>
+              <span class="metric-lbl">Release Failures</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">TLS 1.3</span>
+              <span class="metric-lbl">Data In-Transit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KEY CONTRIBUTIONS -->
+        <div class="detail-section">
+          <h2>Key Contributions</h2>
+          <ul>
+            <li>
+              <strong>High-Throughput Ingestion:</strong> Engineered a resilient data ingestion
+              layer using AWS API Gateway and Network Load Balancers (NLB) backed by Amazon
+              Kinesis Data Streams to handle erratic, high-frequency GPS ping surges without data loss.
+            </li>
+            <li>
+              <strong>GitOps CI/CD:</strong> Architected automated CI/CD pipelines using GitHub
+              Actions for containerized deployment of Node.js/Go microservices, integrating
+              SonarQube for security linting — reducing release failure rates by 80%.
+            </li>
+            <li>
+              <strong>Infrastructure as Code:</strong> Standardized infrastructure across Staging
+              and Production using Terraform modules with remote state locking via S3 + DynamoDB
+              for strict environment parity.
+            </li>
+            <li>
+              <strong>Kubernetes on EKS:</strong> Managed microservice workloads on EKS using
+              Helm charts; automated patching and security compliance across worker nodes via Ansible.
+            </li>
+            <li>
+              <strong>Caching &amp; Data Layer:</strong> Administered ElastiCache for Redis for
+              live location state (instant dashboard rendering) and TimescaleDB/RDS for persistent
+              historical route analysis.
+            </li>
+            <li>
+              <strong>Observability:</strong> Implemented distributed tracing and metrics with the
+              ELK Stack (Elasticsearch, Logstash, Kibana) and CloudWatch for end-to-end visibility.
+            </li>
+            <li>
+              <strong>Security:</strong> Enforced TLS 1.3 in transit, AWS Secrets Manager for
+              credential rotation, and strict IAM role policies for all service-to-service access.
+            </li>
+            <li>
+              <strong>Serverless Automation:</strong> Authored Python-based Lambda functions for
+              geofencing alerts, stale cache cleanup during off-hours, and weekly infrastructure
+              cost-optimization reports.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ARCHITECTURE -->
+        <div class="detail-section">
+          <h2>Architecture Notes</h2>
+          <p>
+            GPS telemetry from field devices enters through API Gateway backed by NLB, flowing
+            into Amazon Kinesis Data Streams for high-throughput ingestion. Consumer microservices
+            (Node.js) running on EKS process streams and write ephemeral location state to
+            ElastiCache (Redis) for real-time dashboard queries. Historical telemetry is persisted
+            to TimescaleDB/RDS on PostgreSQL for route analytics and reporting. The entire
+            infrastructure is Terraform-provisioned with remote state in S3 + DynamoDB locking.
+          </p>
+        </div>
+
+        <!-- SCREENSHOTS -->
+        <div class="detail-section">
+          <h2>Screenshots</h2>
+          <p style="margin-bottom:1rem;font-size:.82rem;">
+            Add your project screenshots below. Drop image files into
+            <code style="font-family:var(--font-mono);font-size:.75rem;background:var(--bg-alt);padding:.1rem .3rem;border-radius:2px;">assets/screenshots/</code>
+            and update the <code style="font-family:var(--font-mono);font-size:.75rem;background:var(--bg-alt);padding:.1rem .3rem;border-radius:2px;">src</code> attributes.
+          </p>
+          <div class="screenshots-grid">
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/eks-cluster.png" alt="EKS Cluster" /> -->
+              <span class="ss-label">EKS Cluster Overview</span>
+              <span class="ss-hint">Add: ../assets/screenshots/eks-cluster.png</span>
+            </div>
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/kinesis-streams.png" alt="Kinesis" /> -->
+              <span class="ss-label">Kinesis Data Streams</span>
+              <span class="ss-hint">Add: ../assets/screenshots/kinesis-streams.png</span>
+            </div>
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/elk-kibana.png" alt="Kibana" /> -->
+              <span class="ss-label">Kibana Log Dashboard</span>
+              <span class="ss-hint">Add: ../assets/screenshots/elk-kibana.png</span>
+            </div>
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/github-actions.png" alt="GitHub Actions" /> -->
+              <span class="ss-label">GitHub Actions Pipeline</span>
+              <span class="ss-hint">Add: ../assets/screenshots/github-actions.png</span>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="detail-sidebar">
+        <div class="sidebar-card">
+          <h3>Repository</h3>
+          <a href="https://github.com/Ranjankumarjena-rj" target="_blank" class="sidebar-link">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Tech Stack</h3>
+          <div class="sidebar-stack">
+            <span>Amazon EKS</span>
+            <span>Kinesis Data Streams</span>
+            <span>API Gateway + NLB</span>
+            <span>ElastiCache (Redis)</span>
+            <span>TimescaleDB / RDS</span>
+            <span>AWS Lambda</span>
+            <span>Terraform (modules)</span>
+            <span>Helm Charts</span>
+            <span>GitHub Actions</span>
+            <span>Ansible</span>
+            <span>ELK Stack</span>
+            <span>SonarQube</span>
+            <span>Secrets Manager</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Links</h3>
+          <a href="../index.html#projects" class="sidebar-link">← All Projects</a>
+          <a href="../index.html#contact" class="sidebar-link">Contact Ranjan</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Ranjan Kumar Jena</span>
+      <span>Built with HTML · CSS · Served via NGINX / Tomcat</span>
+    </div>
+  </footer>
+
+</body>
+</html>

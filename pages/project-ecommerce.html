@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Platform — Ranjan Kumar Jena</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">RKJ<span class="accent">.</span></a>
+      <nav>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a href="mailto:ranjankumarjena.rjs@gmail.com" class="btn-nav">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- DETAIL HERO -->
+  <section class="detail-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="detail-back">← Back to Projects</a>
+      <div class="project-status" style="margin-bottom:.75rem;">
+        <span class="dot green"></span>
+        <span style="font-family:var(--font-mono);font-size:.68rem;color:var(--green);letter-spacing:.06em;">Production · Internal Platform</span>
+      </div>
+      <h1>E-Commerce &amp; Retailer Distribution Platform</h1>
+      <div class="detail-meta">
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Client</span>
+          <span class="detail-meta-value">Samal Motors Pvt. Ltd.</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Role</span>
+          <span class="detail-meta-value">Cloud Support Engineer</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Duration</span>
+          <span class="detail-meta-value">Oct 2023 – Mar 2025</span>
+        </div>
+        <div class="detail-meta-item">
+          <span class="detail-meta-label">Uptime SLA</span>
+          <span class="detail-meta-value">99.9%</span>
+        </div>
+      </div>
+      <div class="detail-hero-tags">
+        <span>AWS EC2</span><span>ALB</span><span>Auto Scaling</span>
+        <span>Jenkins</span><span>Docker</span><span>Kubernetes</span>
+        <span>Terraform</span><span>Ansible</span><span>RDS</span>
+        <span>Redis</span><span>Prometheus</span><span>Grafana</span>
+        <span>AWS WAF</span><span>Spring Boot</span><span>Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="detail-body">
+    <div class="container">
+      <main class="detail-main">
+
+        <!-- OVERVIEW -->
+        <div class="detail-section">
+          <h2>Project Overview</h2>
+          <p>
+            Architecture, deployment, and ongoing maintenance of a high-traffic B2B e-commerce
+            platform designed for seamless retailer transactions at Samal Motors (a Tata Motors
+            authorized distributor). The platform enables thousands of retailers to place orders,
+            track real-time spare-parts inventory, and manage end-to-end distribution operations —
+            all on AWS infrastructure engineered for 99.9% uptime.
+          </p>
+        </div>
+
+        <!-- METRICS -->
+        <div class="detail-section">
+          <h2>Key Metrics</h2>
+          <div class="metrics-row">
+            <div class="metric-box">
+              <span class="metric-val">99.9%</span>
+              <span class="metric-lbl">Uptime SLA</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">↓70%</span>
+              <span class="metric-lbl">Deployment Errors</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">0</span>
+              <span class="metric-lbl">Peak Degradations</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">3</span>
+              <span class="metric-lbl">Environments (Dev/QA/Prod)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KEY CONTRIBUTIONS -->
+        <div class="detail-section">
+          <h2>Key Contributions</h2>
+          <ul>
+            <li>
+              <strong>Traffic Management:</strong> Engineered scalable infrastructure using AWS Auto Scaling
+              Groups and Application Load Balancers (ALB) to handle massive traffic surges during peak
+              retailer ordering windows with zero performance degradation.
+            </li>
+            <li>
+              <strong>CI/CD Pipeline:</strong> Built and optimized automated Jenkins pipelines for
+              continuous deployment of Spring Boot microservices, reducing manual deployment errors by 70%.
+            </li>
+            <li>
+              <strong>Infrastructure as Code:</strong> Provisioned and managed Dev, QA, and Production
+              environments using Terraform — ensuring environment parity and rapid disaster recovery.
+            </li>
+            <li>
+              <strong>Container Orchestration:</strong> Deployed and managed microservices with Docker
+              and Kubernetes; used Ansible for configuration management and streamlined update distribution.
+            </li>
+            <li>
+              <strong>Database &amp; Caching:</strong> Administered Amazon RDS for order management and
+              integrated Redis caching for real-time, low-latency inventory access.
+            </li>
+            <li>
+              <strong>Observability &amp; Security:</strong> Implemented Prometheus + Grafana + CloudWatch
+              monitoring stack; secured platform using AWS WAF and IAM to protect sensitive retailer data.
+            </li>
+            <li>
+              <strong>Automation Scripts:</strong> Authored Python and Bash scripts for daily DB backups,
+              log rotations, and routine cloud maintenance tasks.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ARCHITECTURE -->
+        <div class="detail-section">
+          <h2>Architecture Notes</h2>
+          <p>
+            The platform follows a multi-tier architecture on AWS with public and private subnets.
+            Web-facing traffic enters through an Application Load Balancer targeting Auto Scaling Groups
+            of EC2 instances. Spring Boot microservices are containerized with Docker and orchestrated
+            via Kubernetes. Amazon RDS handles persistent transactional data, with Redis providing a
+            caching layer for inventory lookups. CloudWatch, Prometheus, and Grafana provide end-to-end
+            observability across all tiers.
+          </p>
+        </div>
+
+        <!-- SCREENSHOTS -->
+        <div class="detail-section">
+          <h2>Screenshots</h2>
+          <p style="margin-bottom:1rem;font-size:.82rem;">
+            Add your project screenshots below. Replace the placeholder slots by setting
+            <code style="font-family:var(--font-mono);font-size:.75rem;background:var(--bg-alt);padding:.1rem .3rem;border-radius:2px;">src</code>
+            on each <code style="font-family:var(--font-mono);font-size:.75rem;background:var(--bg-alt);padding:.1rem .3rem;border-radius:2px;">&lt;img&gt;</code> tag
+            to the relative path of your image (e.g., <code style="font-family:var(--font-mono);font-size:.75rem;background:var(--bg-alt);padding:.1rem .3rem;border-radius:2px;">../assets/screenshots/ec2-dashboard.png</code>).
+          </p>
+          <div class="screenshots-grid">
+            <!-- Slot 1: replace src with your actual image -->
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/your-image.png" alt="AWS Console" /> -->
+              <span class="ss-label">Jenkins Pipeline View</span>
+              <span class="ss-hint">Add screenshot: ../assets/screenshots/jenkins-pipeline.png</span>
+            </div>
+            <!-- Slot 2 -->
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/your-image.png" alt="Kubernetes" /> -->
+              <span class="ss-label">Kubernetes Dashboard</span>
+              <span class="ss-hint">Add screenshot: ../assets/screenshots/k8s-dashboard.png</span>
+            </div>
+            <!-- Slot 3 -->
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/your-image.png" alt="Grafana" /> -->
+              <span class="ss-label">Grafana Monitoring</span>
+              <span class="ss-hint">Add screenshot: ../assets/screenshots/grafana.png</span>
+            </div>
+            <!-- Slot 4 -->
+            <div class="screenshot-slot">
+              <!-- <img src="../assets/screenshots/your-image.png" alt="Terraform" /> -->
+              <span class="ss-label">Terraform Plan Output</span>
+              <span class="ss-hint">Add screenshot: ../assets/screenshots/terraform.png</span>
+            </div>
+            <!-- Add more slots as needed -->
+          </div>
+        </div>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="detail-sidebar">
+        <div class="sidebar-card">
+          <h3>Repository</h3>
+          <!-- Update href when you push to GitHub -->
+          <a href="https://github.com/Ranjankumarjena-rj" target="_blank" class="sidebar-link">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Tech Stack</h3>
+          <div class="sidebar-stack">
+            <span>AWS EC2 / ALB / Auto Scaling</span>
+            <span>Amazon RDS</span>
+            <span>Redis (ElastiCache)</span>
+            <span>Jenkins</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>Ansible</span>
+            <span>Prometheus + Grafana</span>
+            <span>AWS WAF + IAM</span>
+            <span>Spring Boot</span>
+            <span>Python / Bash</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Links</h3>
+          <a href="../index.html#projects" class="sidebar-link">← All Projects</a>
+          <a href="../index.html#contact" class="sidebar-link">Contact Ranjan</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Ranjan Kumar Jena</span>
+      <span>Built with HTML · CSS · Served via NGINX / Tomcat</span>
+    </div>
+  </footer>
+
+</body>
+</html>
